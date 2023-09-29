@@ -23,9 +23,10 @@ class SignInScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: /*const*/ [
-              
+
                     //Logo do app
-                  const  Text.rich(TextSpan(
+                  const  Text.rich(
+                    TextSpan(
                       style: TextStyle(
                         fontSize: 40,
                       ),
