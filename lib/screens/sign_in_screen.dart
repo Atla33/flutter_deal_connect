@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deal_connect/config/custom_colors.dart';
+import 'package:flutter_deal_connect/screens/sign_up_screen.dart';
 
 import '../components/custom_text_fild.dart';
 
@@ -171,7 +172,15 @@ class SignInScreen extends StatelessWidget {
                             ),
                             side: const BorderSide(
                                 width: 2, color: Color.fromARGB(255, 1, 34, 63))),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder:  (c){
+                                return SignUpScreen();
+                              }
+                            ),
+                          );
+                        },
                         child: const Text(
                           'Criar conta',
                           style: TextStyle(
